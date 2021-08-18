@@ -16,17 +16,15 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         body: Container(
-          color: Colors.yellow,
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage("assets/claro.jpg"), fit: BoxFit.cover)),
           width: double.infinity,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-
-
-              //Image.asset("assets/logo.png"),
-
-              
+              Image.asset("assets/logo.png"),
               ButtonTextIcon(
                 color: Colors.red,
                 text: "Login com google",
